@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clearline Home Inspections | Home Inspector, Toronto & GTA</title>
+<meta name="description" content="Independent, detailed home inspections across Toronto and the GTA. Pre-purchase, pre-listing, new-build and condo inspections with a full photo report within 24 hours.">
+<meta property="og:title" content="Clearline Home Inspections | Home Inspector, Toronto & GTA">
+<meta property="og:description" content="Independent, detailed home inspections across Toronto and the GTA. Pre-purchase, pre-listing, new-build and condo inspections with a full photo report within 24 hours.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a44'/%3E%3Ccircle cx='32' cy='30' r='11' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Ccircle cx='32' cy='30' r='4' fill='%23f2b544'/%3E%3Cpath d='M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z' fill='none' stroke='%23f2b544' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <nav class="main">
+      <a class="logo" href="index.html" aria-label="Home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2b544"/><circle cx="32" cy="30" r="11" fill="none" stroke="#0f2a44" stroke-width="4"/><circle cx="32" cy="30" r="4" fill="#0f2a44"/><path d="M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z" fill="none" stroke="#0f2a44" stroke-width="4" stroke-linejoin="round"/><path d="M14 52h36" stroke="#0f2a44" stroke-width="4" stroke-linecap="round"/></svg><span data-brand="name">Clearline Home Inspections</span></a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="service-area.html">Service area</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="phone" data-brand="phone-link" href="tel:+17055009009"><span data-brand="phone">(705) 500-9009</span></a>
+        <a class="btn btn-primary" href="book.html" style="padding:10px 16px">Book online</a>
+        <button class="burger" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Independent home inspections · <span data-brand="area">Toronto &amp; the GTA</span></span>
+      <h1 data-brand="tagline">See the whole house before you buy it.</h1>
+      <p class="lead">A thorough, unhurried inspection of every accessible system in the home, explained in plain language, with a photo-rich digital report in your inbox within 24 hours. No surprises after closing.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="book.html">Book an inspection</a>
+        <a class="btn btn-ghost" href="sample-report.html">See a sample report</a>
+      </div>
+      <div class="hero-points">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#f2b544" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Same-week availability</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#f2b544" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>You're welcome to walk along</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#f2b544" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Report within 24 hours</span>
+      </div>
+    </div>
+    <form class="quote-card" onsubmit="return sendForm(event,this)">
+      <input type="hidden" name="subject" value="Booking request">
+      <h3>Request a booking</h3>
+      <div class="sub">Tell us about the property and we'll confirm a time, usually within a few hours.</div>
+      <div class="row2">
+        <div class="field"><label>Name</label><input name="name" required placeholder="Your name"></div>
+        <div class="field"><label>Phone</label><input name="phone" type="tel" required placeholder="(416) 555-0123"></div>
+      </div>
+      <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@email.com"></div>
+      <div class="field"><label>Property address</label><input name="address" required placeholder="123 Main St, Brampton"></div>
+      <div class="row2">
+        <div class="field"><label>Inspection type</label>
+          <select name="type"><option>Pre-purchase</option><option>Pre-listing (seller)</option><option>New build / PDI</option><option>Condo</option><option>Maintenance check-up</option><option>Not sure yet</option></select></div>
+        <div class="field"><label>Preferred date</label><input name="date" type="date"></div>
+      </div>
+      <button class="btn btn-dark" type="submit" style="width:100%;justify-content:center">Request booking</button>
+      <div class="fine">Prefer to pick your own slot? <a href="book.html">Book online</a>. We never share your details.</div>
+    </form>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#fff6df"/><path d="M24 10 12 16v9c0 8 5.3 12.6 12 15 6.7-2.4 12-7 12-15v-9z" stroke="#d99a22" stroke-width="2.2"/><path d="m18 24 4 4 8-8" stroke="#d99a22" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div>Standards of Practice<small>Every inspection follows a published, industry-recognized SOP</small></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#fff6df"/><rect x="12" y="14" width="24" height="22" rx="3" stroke="#d99a22" stroke-width="2.2"/><path d="M12 21h24M18 10v6M30 10v6" stroke="#d99a22" stroke-width="2.2" stroke-linecap="round"/><path d="m19 29 3 3 7-7" stroke="#d99a22" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div>Report within 24 hours<small>Photo-rich digital report, colour-coded by urgency</small></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#fff6df"/><path d="M14 34V20l10-8 10 8v14z" stroke="#d99a22" stroke-width="2.2"/><path d="M20 34v-8h8v8" stroke="#d99a22" stroke-width="2.2"/></svg>
+      <div>Construction background<small>Hands-on trades experience, not just a checklist</small></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#fff6df"/><path d="M24 12c-6 0-10 4-10 10 0 8 10 14 10 14s10-6 10-14c0-6-4-10-10-10z" stroke="#d99a22" stroke-width="2.2"/><circle cx="24" cy="22" r="3.5" stroke="#d99a22" stroke-width="2.2"/></svg>
+      <div>Local &amp; independent<small>No referral fees, no builder or agent affiliations</small></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <span class="eyebrow">Services</span>
+    <h2>Inspections for every stage of owning a home</h2>
+    <p class="lead mt12">Clear scope, clear pricing. Most inspections take 2.5 to 4 hours depending on the size and age of the home.</p>
+    <div class="grid3 mt48">
+      <a class="card" href="services-pre-purchase.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11 12 3l9 8M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Pre-purchase inspection</h3>
+        <p>The full walk-through before you waive conditions: roof to foundation, every accessible system, with a report you can negotiate from.</p>
+        <div class="price">From $399</div><div class="more">Learn more →</div>
+      </a>
+      <a class="card" href="services-pre-listing.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M9 20v-5h6v5"/><path d="m3 9 9-6 9 6"/></svg></div>
+        <h3>Pre-listing inspection</h3>
+        <p>Selling? Find the issues before a buyer's inspector does. Fix what matters, price with confidence, and avoid last-minute renegotiation.</p>
+        <div class="price">From $399</div><div class="more">Learn more →</div>
+      </a>
+      <a class="card" href="services-new-build-pdi.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-8h6v8"/><path d="M4 12h16"/></svg></div>
+        <h3>New build &amp; PDI</h3>
+        <p>An independent set of eyes at your pre-delivery inspection, or before your Tarion 30-day and 1-year warranty windows close.</p>
+        <div class="price">From $350</div><div class="more">Learn more →</div>
+      </a>
+      <a class="card" href="services-condo.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3M13 7h3M8 11h3M13 11h3M8 15h3M13 15h3"/></svg></div>
+        <h3>Condo inspection</h3>
+        <p>Unit-focused inspection covering electrical, plumbing, HVAC, windows, moisture and finishes, plus a review of visible common-element concerns.</p>
+        <div class="price">From $299</div><div class="more">Learn more →</div>
+      </a>
+      <a class="card" href="services-maintenance.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Annual maintenance check-up</h3>
+        <p>Already own the home? A yearly review to catch small problems (grading, flashing, caulking, venting) before they become expensive ones.</p>
+        <div class="price">From $275</div><div class="more">Learn more →</div>
+      </a>
+      <a class="card" href="pricing.html#addons">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Add-ons</h3>
+        <p>Thermal imaging scan, moisture mapping, detached garage or outbuilding, and re-inspection after repairs. Bundle with any inspection.</p>
+        <div class="price">See pricing</div><div class="more">View add-ons →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <span class="eyebrow">How it works</span>
+    <h2>Simple from booking to report</h2>
+    <p class="lead mt12">You'll always know what's happening and what comes next.</p>
+    <div class="steps">
+      <div class="step"><h3>Book online or by phone</h3><p>Pick a slot online or send the address and your preferred date. We confirm the same day and coordinate access with the listing agent.</p></div>
+      <div class="step"><h3>We inspect, you walk along</h3><p>Join for the whole inspection or just the last 30 minutes. We show you what we found and how the house works.</p></div>
+      <div class="step"><h3>Report in 24 hours</h3><p>A photo-rich digital report, colour-coded by urgency, with a summary page your agent and lawyer can use.</p></div>
+      <div class="step"><h3>Questions? Call anytime</h3><p>Support doesn't end at delivery. Call about a finding, a contractor quote, or a repair, weeks or months later.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="systems">
+  <div class="container">
+    <span class="eyebrow">What's covered</span>
+    <h2>Every accessible system, top to bottom</h2>
+    <div class="grid4 mt32">
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12 12 4l9 8"/><path d="M5 11v9h14v-9"/></svg>Roof</h3><ul><li>Shingles, flashing, valleys</li><li>Vents, chimneys, skylights</li><li>Eavestroughs and downspouts</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>Exterior</h3><ul><li>Siding, brick, trim, caulking</li><li>Grading and drainage</li><li>Decks, porches, walkways</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 21h18M6 21V10l6-6 6 6v11"/></svg>Structure</h3><ul><li>Foundation walls and cracks</li><li>Floor and roof framing</li><li>Signs of movement or moisture</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Electrical</h3><ul><li>Panel, breakers, grounding</li><li>Outlets, GFCI/AFCI, wiring type</li><li>Aluminum or knob-and-tube flags</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11z"/></svg>Plumbing</h3><ul><li>Supply and drain materials</li><li>Water heater, fixtures, pressure</li><li>Sump pump and backwater valve</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 11h10M7 15h6"/></svg>Heating &amp; cooling</h3><ul><li>Furnace age, operation, venting</li><li>A/C or heat pump</li><li>Ductwork, filters, thermostat</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 20V10"/></svg>Interior</h3><ul><li>Windows, doors, stairs, railings</li><li>Walls, ceilings, floors</li><li>Kitchen and bath moisture checks</li></ul></div>
+      <div class="sys"><h3><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 20h16M4 20V8l8-4 8 4v12"/><path d="M8 20v-5M12 20v-8M16 20v-5"/></svg>Attic, insulation &amp; ventilation</h3><ul><li>Insulation type and depth</li><li>Attic ventilation and moisture</li><li>Bathroom and dryer exhaust</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container report-grid">
+    <div>
+      <span class="eyebrow">The report</span>
+      <h2>A report you can actually use</h2>
+      <p class="lead mt12">No 60 pages of boilerplate. Every finding has a photo, a plain-English explanation, why it matters, and what to do about it.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#2e8b57" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span><b>Summary page first.</b> Safety issues and major defects on page one so nothing important gets buried.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#2e8b57" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span><b>Colour-coded by urgency.</b> Safety, repair now, monitor, and maintenance tips.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#2e8b57" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span><b>Mobile friendly.</b> Open it on your phone at the negotiation table or share a link with your agent.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#2e8b57" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span><b>Repair request builder.</b> Pick the items you want addressed and export them for your offer.</span></li>
+      </ul>
+      <div class="mt32"><a class="btn btn-dark" href="sample-report.html">Read the full sample report</a></div>
+    </div>
+    <div class="report-mock" aria-label="Sample report preview">
+      <div class="hdr"><span>Inspection report · 42 Sample Cres, Brampton</span><span>Summary</span></div>
+      <div class="finding"><div class="ph"></div><div><b>Missing GFCI protection at kitchen counter <span class="tag red">Safety</span></b><span>Receptacles within 1.5 m of the sink are not GFCI protected. Recommend a licensed electrician install GFCI protection.</span></div></div>
+      <div class="finding"><div class="ph"></div><div><b>Downspout discharges at foundation <span class="tag amb">Repair</span></b><span>Extend downspout at least 1.8 m from the foundation to reduce basement moisture risk.</span></div></div>
+      <div class="finding"><div class="ph"></div><div><b>Furnace near end of typical service life <span class="tag blu">Monitor</span></b><span>Mid-efficiency furnace, approx. 2004. Operating normally today. Budget for replacement.</span></div></div>
+      <div class="finding"><div class="ph"></div><div><b>Attic insulation R-value adequate <span class="tag grn">Good</span></b><span>Blown cellulose, approx. 400 mm, evenly distributed. Baffles present at eaves.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container about-grid">
+    <div class="portrait" aria-label="Inspector photo placeholder">M</div>
+    <div>
+      <span class="eyebrow">Your inspector</span>
+      <h2>Meet <span data-brand="inspector">Manee Sandhu</span></h2>
+      <p class="lead mt12">I came to home inspection from the construction side. Years of hands-on work in hardscape, exterior construction, drainage and grading taught me how houses are actually built, and where they fail. That's the lens I bring to every inspection: not a checklist, but an understanding of how each system affects the next.</p>
+      <p class="mt12" style="color:var(--muted)">I run every inspection the way I'd want one done on my own home: slowly, thoroughly, and with the buyer beside me so nothing in the report is a surprise.</p>
+      <div class="mt32 actions"><a class="btn btn-dark" href="about.html">More about me</a><a class="btn btn-outline" href="service-area.html">Where I work</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container narrow">
+    <div class="center"><span class="eyebrow">FAQ</span><h2>Common questions</h2></div>
+    <div class="mt32">
+      <details><summary>How long does an inspection take?</summary><p>Usually 2.5 to 4 hours for a detached home, 1.5 to 2 hours for a condo. Older, larger or heavily finished homes take longer. We never rush to fit a schedule.</p></details>
+      <details><summary>Should I attend?</summary><p>Yes, if you can. Walking through with the inspector is the best way to understand the house. If you can't make the whole thing, join for the last 30 to 45 minutes for the summary walk-through.</p></details>
+      <details><summary>What isn't included?</summary><p>A home inspection is visual and non-invasive. We don't open walls, move furniture or stored items, or test for mould, asbestos, radon, pests or wells and septic systems. If we see signs that suggest a specialist is needed, we tell you exactly who to call.</p></details>
+      <details><summary>How do I pay?</summary><p>E-transfer, credit card or debit, payable on the day of the inspection. The report is released once payment is received.</p></details>
+    </div>
+    <div class="center mt32"><a class="btn btn-outline" href="faq.html">All questions</a></div>
+  </div>
+</section>
+<div class="cta-band">
+  <div class="container">
+    <div><h2>Ready to book your inspection?</h2><p>Same-week availability across Toronto and the GTA. Evenings and weekends welcome.</p></div>
+    <div class="actions"><a class="btn btn-dark" href="book.html">Book online</a><a class="btn btn-outline" data-brand="phone-link" href="tel:+17055009009">Call <span data-brand="phone">(705) 500-9009</span></a></div>
+  </div>
+</div>
+</main>
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="color:#fff;margin-bottom:12px"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2b544"/><circle cx="32" cy="30" r="11" fill="none" stroke="#0f2a44" stroke-width="4"/><circle cx="32" cy="30" r="4" fill="#0f2a44"/><path d="M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z" fill="none" stroke="#0f2a44" stroke-width="4" stroke-linejoin="round"/><path d="M14 52h36" stroke="#0f2a44" stroke-width="4" stroke-linecap="round"/></svg><span data-brand="name">Clearline Home Inspections</span></a>
+        <p style="max-width:34ch">Independent, detailed home inspections across <span data-brand="area">Toronto &amp; the GTA</span>. Based in <span data-brand="base">Halton Hills, ON</span>.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="services-pre-purchase.html">Pre-purchase inspection</a></li>
+        <li><a href="services-pre-listing.html">Pre-listing inspection</a></li>
+        <li><a href="services-new-build-pdi.html">New build &amp; PDI</a></li>
+        <li><a href="services-condo.html">Condo inspection</a></li>
+        <li><a href="services-maintenance.html">Maintenance check-up</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="service-area.html">Service area</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a data-brand="phone-link" href="tel:+17055009009"><span data-brand="phone">(705) 500-9009</span></a></li>
+        <li><a data-brand="email-link" href="mailto:hello@clearlinehomeinspections.ca"><span data-brand="email">hello@clearlinehomeinspections.ca</span></a></li>
+        <li><span data-brand="hours">Mon to Sun, 7 am to 8 pm</span></li>
+        <li><a href="book.html">Book online</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="yr"></span> <span data-brand="name">Clearline Home Inspections</span>. All rights reserved.</div>
+      <div>Inspections are visual and non-invasive and follow a published Standards of Practice. See <a href="faq.html" style="color:#fff">FAQ</a> for scope and limitations.</div>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast">Thanks! Opening your email app to send the request.</div>
+<script src="site.js"></script>
+</body>
+</html>

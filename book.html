@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Home Inspection Online | Clearline Home Inspections</title>
+<meta name="description" content="Pick a date and time for your home inspection in Toronto or the GTA. Same-week availability, evenings and weekends included.">
+<meta property="og:title" content="Book a Home Inspection Online | Clearline Home Inspections">
+<meta property="og:description" content="Pick a date and time for your home inspection in Toronto or the GTA. Same-week availability, evenings and weekends included.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a44'/%3E%3Ccircle cx='32' cy='30' r='11' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Ccircle cx='32' cy='30' r='4' fill='%23f2b544'/%3E%3Cpath d='M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z' fill='none' stroke='%23f2b544' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <nav class="main">
+      <a class="logo" href="index.html" aria-label="Home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2b544"/><circle cx="32" cy="30" r="11" fill="none" stroke="#0f2a44" stroke-width="4"/><circle cx="32" cy="30" r="4" fill="#0f2a44"/><path d="M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z" fill="none" stroke="#0f2a44" stroke-width="4" stroke-linejoin="round"/><path d="M14 52h36" stroke="#0f2a44" stroke-width="4" stroke-linecap="round"/></svg><span data-brand="name">Clearline Home Inspections</span></a>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="service-area.html">Service area</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="phone" data-brand="phone-link" href="tel:+17055009009"><span data-brand="phone">(705) 500-9009</span></a>
+        <a class="btn btn-primary" href="book.html" style="padding:10px 16px">Book online</a>
+        <button class="burger" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<!-- no-cta -->
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> › Book online</div>
+    <span class="eyebrow">Book online</span>
+    <h1>Pick a time that works for you</h1>
+    <p class="lead">Choose a slot, tell us about the property, and you'll get a confirmation by email and text. Need something sooner than what's shown? Call <a data-brand="phone-link" href="tel:+17055009009" style="color:#fff"><span data-brand="phone">(705) 500-9009</span></a>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container book-grid">
+    <div class="cal-box" id="calendar">
+      <!-- If BRAND.booking is set in site.js, the live calendar replaces this placeholder automatically. -->
+      <div class="cal-placeholder">
+        <div>
+          <svg viewBox="0 0 48 48" fill="none" style="width:64px;height:64px;margin:0 auto 16px"><rect x="8" y="10" width="32" height="30" rx="4" stroke="#d99a22" stroke-width="2.5"/><path d="M8 19h32M16 6v8M32 6v8" stroke="#d99a22" stroke-width="2.5" stroke-linecap="round"/><path d="m18 30 4 4 8-8" stroke="#d99a22" stroke-width="2.8" stroke-linecap="round"/></svg>
+          <h3>Online calendar coming soon</h3>
+          <p class="mt12">Until the live calendar is connected, use the request form and we'll confirm your slot within a few hours, 7 days a week.</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="quote-card" onsubmit="return sendForm(event,this)">
+      <input type="hidden" name="subject" value="Booking request">
+      <input type="hidden" name="time" value="">
+      <h3>Request a slot</h3>
+      <div class="sub">We'll confirm by email and text.</div>
+      <div class="row2">
+        <div class="field"><label>Name</label><input name="name" required></div>
+        <div class="field"><label>Phone</label><input name="phone" type="tel" required></div>
+      </div>
+      <div class="field"><label>Email</label><input name="email" type="email" required></div>
+      <div class="field"><label>Property address</label><input name="address" required placeholder="Street, city"></div>
+      <div class="row2">
+        <div class="field"><label>Inspection type</label>
+          <select name="type"><option>Pre-purchase</option><option>Pre-listing (seller)</option><option>New build / PDI</option><option>Condo</option><option>Maintenance check-up</option><option>Not sure yet</option></select></div>
+        <div class="field"><label>Home type</label>
+          <select name="home"><option>Detached</option><option>Semi-detached</option><option>Townhouse</option><option>Condo apartment</option><option>Other</option></select></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label>Approx. size (sq ft)</label><input name="size" placeholder="e.g. 2,000"></div>
+        <div class="field"><label>Year built (approx.)</label><input name="built" placeholder="e.g. 1994"></div>
+      </div>
+      <div class="field"><label>Preferred date</label><input name="date" type="date"></div>
+      <div class="field"><label>Preferred start time</label>
+        <div class="slots">
+          <div class="slot" onclick="pickSlot(this)">8:00 am</div><div class="slot" onclick="pickSlot(this)">9:00 am</div><div class="slot" onclick="pickSlot(this)">10:00 am</div>
+          <div class="slot" onclick="pickSlot(this)">12:00 pm</div><div class="slot" onclick="pickSlot(this)">1:00 pm</div><div class="slot" onclick="pickSlot(this)">2:00 pm</div>
+          <div class="slot" onclick="pickSlot(this)">4:00 pm</div><div class="slot" onclick="pickSlot(this)">5:00 pm</div><div class="slot" onclick="pickSlot(this)">Flexible</div>
+        </div>
+      </div>
+      <div class="field"><label>Condition deadline or closing date (if any)</label><input name="deadline" placeholder="e.g. conditions expire Friday"></div>
+      <div class="field"><label>Anything else</label><textarea name="notes" rows="3" placeholder="Agent contact, access notes, add-ons you want"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Request this slot</button>
+      <div class="fine">No payment needed to book. Pay by e-transfer, credit or debit on the day. Free cancellation with 24 hours' notice.</div>
+    </form>
+  </div>
+</section>
+
+<section class="includes tight">
+  <div class="container">
+    <div class="grid3">
+      <div class="sys"><h3>Before the inspection</h3><ul><li>We coordinate access with the listing agent</li><li>Utilities must be on (water, gas, electricity)</li><li>Bring your offer or PDI form if you have one</li></ul></div>
+      <div class="sys"><h3>On the day</h3><ul><li>Arrive any time; the summary walk-through is the last 30 to 45 minutes</li><li>Wear shoes you can walk a yard and a basement in</li><li>Ask anything, there are no dumb questions</li></ul></div>
+      <div class="sys"><h3>After</h3><ul><li>Report link and PDF within 24 hours</li><li>Call about any finding, any time</li><li>Send contractor quotes for a second opinion</li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" style="color:#fff;margin-bottom:12px"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f2b544"/><circle cx="32" cy="30" r="11" fill="none" stroke="#0f2a44" stroke-width="4"/><circle cx="32" cy="30" r="4" fill="#0f2a44"/><path d="M12 30c6-9 12-14 20-14s14 5 20 14c-6 9-12 14-20 14S18 39 12 30z" fill="none" stroke="#0f2a44" stroke-width="4" stroke-linejoin="round"/><path d="M14 52h36" stroke="#0f2a44" stroke-width="4" stroke-linecap="round"/></svg><span data-brand="name">Clearline Home Inspections</span></a>
+        <p style="max-width:34ch">Independent, detailed home inspections across <span data-brand="area">Toronto &amp; the GTA</span>. Based in <span data-brand="base">Halton Hills, ON</span>.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="services-pre-purchase.html">Pre-purchase inspection</a></li>
+        <li><a href="services-pre-listing.html">Pre-listing inspection</a></li>
+        <li><a href="services-new-build-pdi.html">New build &amp; PDI</a></li>
+        <li><a href="services-condo.html">Condo inspection</a></li>
+        <li><a href="services-maintenance.html">Maintenance check-up</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="sample-report.html">Sample report</a></li>
+        <li><a href="service-area.html">Service area</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a data-brand="phone-link" href="tel:+17055009009"><span data-brand="phone">(705) 500-9009</span></a></li>
+        <li><a data-brand="email-link" href="mailto:hello@clearlinehomeinspections.ca"><span data-brand="email">hello@clearlinehomeinspections.ca</span></a></li>
+        <li><span data-brand="hours">Mon to Sun, 7 am to 8 pm</span></li>
+        <li><a href="book.html">Book online</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="yr"></span> <span data-brand="name">Clearline Home Inspections</span>. All rights reserved.</div>
+      <div>Inspections are visual and non-invasive and follow a published Standards of Practice. See <a href="faq.html" style="color:#fff">FAQ</a> for scope and limitations.</div>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast">Thanks! Opening your email app to send the request.</div>
+<script src="site.js"></script>
+</body>
+</html>
