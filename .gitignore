@@ -4,3 +4,6 @@ desktop.ini
 
 # Client inspection reports and photos: never published
 reports/
+
+# Claude desktop app scratch folder
+Claude outputs/
