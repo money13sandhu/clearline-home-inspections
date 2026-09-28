@@ -39,9 +39,9 @@ window.BRAND = {
   const here = location.pathname.split('/').pop() || 'index.html';
   set('.navlinks a', a => { if ((a.getAttribute('href')||'').split('/').pop() === here) a.classList.add('active'); });
 
-  // mobile menu
-  const burger = document.querySelector('.burger');
-  if (burger) burger.addEventListener('click', () => document.getElementById('navlinks').classList.toggle('open'));
+  // mobile menu: close when a link is tapped or when tapping outside
+  document.querySelectorAll('#navlinks a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+  document.addEventListener('click', e => { if (!e.target.closest('header.site')) toggleMenu(false); });
 
   // booking calendar embed (Calendly) if configured
   const cal = document.getElementById('calendar');
@@ -66,4 +66,12 @@ function pickSlot(el){
   el.parentElement.querySelectorAll('.slot').forEach(s=>s.classList.remove('on'));
   el.classList.add('on');
   const f = el.closest('form'); if (f && f.time) f.time.value = el.textContent.trim();
+}
+
+function toggleMenu(force){
+  const nav = document.getElementById('navlinks'), btn = document.querySelector('.burger');
+  if (!nav) return;
+  const open = (typeof force === 'boolean') ? force : !nav.classList.contains('open');
+  nav.classList.toggle('open', open);
+  if (btn) btn.setAttribute('aria-expanded', String(open));
 }
