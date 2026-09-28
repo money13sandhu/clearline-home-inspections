@@ -1,0 +1,14 @@
+{
+  // GitDoc: every save is committed and pushed to GitHub automatically.
+  "gitdoc.enabled": true,
+  "gitdoc.autoCommitDelay": 30000,
+  "gitdoc.commitMessageFormat": "'Site update' - LLL",
+  "gitdoc.autoPush": "onCommit",
+  "gitdoc.autoPull": "onPush",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "liveServer.settings.donotShowInfoMsg": true
+}
